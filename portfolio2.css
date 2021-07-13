@@ -1,14 +1,18 @@
-*{ 
+body, html{ 
 	margin:0;
 	padding:0;
 	box-sizing: border-box;
+	background: url('portfolio2.jpg')  no-repeat center center/cover;
+	background-attachment: fixed;
+	font-family: 'Playfair Display', serif;
 }
 .navbar{
 	display:flex;
 	justify-content: center;
-	background-color: #a3c2c2;
+	background-color: rgba(232,223,207, 0.2);
 	position: sticky;
-	top:0;
+
+	top: -20px; /* .navbar has margin-bottom: 20px; */
 }
 
 .navbar ul{
@@ -18,9 +22,10 @@
 }
 
 .navbar ul li{
-	font-family: Josefin Sans, sans-serif;
+	font-family: inherit;
 	font-size: 24px;
 	font-weight: bold;
+	
 }
 
 .navbar ul li a{
@@ -34,17 +39,19 @@
 .navbar ul li a:hover{
 	background-color: white;
 	color: black;
-	box-shadow: 0 0 10px #c2d6d6;
+	box-shadow: 0 0 10px #d6d5c2;
 }
 
 #home {
 	display: flex;
 	flex-direction: column;
-	background-color: rgba(0,0,0,0.5);
+	
 	height: 840px;
 	justify-content: center;
 	align-items: center;
-	color:white;
+	color:#383838;
+	
+	
 }
 
 #home::before{
@@ -52,7 +59,8 @@
 	position: absolute;
 	top: 0;
 	right: 0;
-	backgroud: url('portfolio2.jpg')  no-repeat center center/cover;
+	
+	background-attachment: fixed;
 	height: 900px;
 	width: 100%;
 	z-index:-1;
@@ -71,19 +79,28 @@
 }
 
 .headings{
-	font-family: Josefin Sans, sans-serif;
-	font-size:36px;
+	font-family: inherit;
+	font-size: 70px;
 	text-align: center;
-	margin: 40px 0px;
+	margin: 20px 0px;
+}
+
+.headings h1{
+	font-family: inherit;
+	font-size:50px;
+	text-align: center;
+	margin: 20px 0px;
 }
 
 .btn{
-	padding: 10px 35px;
+	padding: 10px 55px;
 	background-color: trasparent;
 	border: 1px solid white;
-	color: white;
+	color: #999994;
 	outline:none;
 	transition: .6s ease;
+	font-size: 30px;
+	
 
 }
 
@@ -101,15 +118,34 @@
 	box-sizing: border-box;
 	padding: 20px;
 	margin-bottom: 50px;
-	
+    
+
 }
+
+.about h1{
+	display:flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	color: #383838;
+	align-items: center;
+	padding: 20px;
+	font-size: 70px;
+	font-family: inherit;
+
+}
+
 
 #pic{
 	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	align-items: center;
+	border-radius: 50px;
+	background-color: trasparent;
 }
 #pic img{
-	width: 575px;
-	height: 400px;
+	width: 200px;
+	
 }
 
 #intro{
@@ -117,9 +153,92 @@
 	flex-direction: column;
 	text-align: justify;
 	padding: 10px;
+	font-family: inherit;
 }
 
-#intro h2{
-	font-size: 24px;
-	margin-bottom: 20px;
+#intro p{
+	display: flex;
+	flex-direction: column;
+	text-align: justify;
+	padding: 10px;
+	font-family: ;
 }
+
+
+#portfolio{
+	display: flex;
+	flex-direction: column;
+	background-color: (0, 0, 0, 0.9);
+	color: #383838;
+	align-items: center;
+	padding: 20px;
+	font-family: inherit;
+}
+
+.gallery{
+	display: flex;
+	justify-content: space-around;
+	box-sizing: border-box;
+	
+}
+
+.gallery img{
+	width: 360px;
+	height: 240px;
+	margin: 10px;
+}
+
+#contact{
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	background-color: (0, 0, 0, 0.9);
+	color: #383838;
+	padding: 20px;
+
+}
+
+.form{
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	align-items: center;
+	margin: 20px 0px;
+	
+}
+.input{
+	padding: 12px;
+	margin: 15px;
+	width: 30%;
+	border: none;
+	outline: none;
+	background-color: white;
+}
+
+#msg{
+	width: 30%;
+	padding: 12px;
+	margin: 15px;
+	border: none;
+	outline: none;
+}
+#send{
+	padding: 10px 55px;
+	background-color: trasparent;
+	border: 1px solid white;
+	color: white;
+	outline:none;
+	transition: .6s ease;
+	font-size: 30px;
+}
+
+#send:hover{
+	cursor: pointer;
+	background-color: white;
+	color: black;
+	box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+	font-weight: bold;
+	
+}
+
+
