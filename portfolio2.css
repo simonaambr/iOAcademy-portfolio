@@ -33,6 +33,8 @@ body, html{
 	color: #ffffff;
 	padding: 8px 25px;
 	transition: all.5s ease;
+	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+	                 0px -5px 35px rgba(255,255,255,0.3)
 
 }
 
@@ -240,5 +242,62 @@ body, html{
 	font-weight: bold;
 	
 }
+
+
+fa {
+	padding: 20px;
+    flex-direction: column;
+    box-sizing: border-box;
+	  width: 405px;
+	  text-align: center;
+	  text-decoration: none;
+	  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+#logo{
+       display: flex;
+       flex-direction: column;
+       box-sizing: border-box;
+       background-color: (0, 0, 0, 0.9);
+       color: #383838;
+       padding: 20px;
+   }
+   
+   .container h2{
+       font-family: inherit;
+       font-size: 50px;
+       text-align: center;
+       margin: 20px 0px;
+   
+   }
+   
+   .logo{
+       display: flex;
+       flex-direction: column;
+       box-sizing: border-box;
+       background-color: (0, 0, 0, 0.9);
+       color: #383838;
+       padding: 20px;
+	   align-items: center;
+	   justify-content: space-around;
+   	
+   }
+   
+   
+   .logo i{
+       font-size: 50px;
+       box-sizing: border-box;
+       color: #383838;
+       padding: 20px;
+	   text-align: center;
+	   flex-direction: column;
+	   align-items: center;
+	   justify-content: space-around;
+	  
+   }
 
 
