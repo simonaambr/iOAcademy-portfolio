@@ -299,5 +299,84 @@ fa {
 	   justify-content: space-around;
 	  
    }
+   
+   
+   
+   .gallery h2{
+	   box-sizing: border-box;
+	  margin: 0 0 10px 0;
+	   font-size: 30px;
+	   flex-direction: column;
+	
+   }
+   
+   .project{
+   	   flex-direction: column;
+	   display: flex;
+	   justify-content: space-between;
+   }
+   
+   
+   
+   .project img{
+	   margin-right: 50px;
+   	
+	
+   }
+   
+   
+   .square{
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+   }
+   
+	
+   
+   @media only screen and (max-width:800px){
+	   .navbar{
+		   align-items: flex-start;
+        flex-direction: column;
+        box-sizing: border-box;
+		width: 100%;
+           }
+		   .navbar ul{
+			   width: 100%;
+			   flex-direction: column;
+		   }
+
+		   .navbar ul li{
+			   text-align: center;
+	
+		   }
+		   
+		   .navbar ul li a{
+			   padding: .5rem 1rem;
+		   }
+		   .gallery{
+		   	display: flex;
+			flex-direction: column;
+		   	justify-content: space-around;
+		   	box-sizing: border-box; 
+			width: 100%;
+            padding: 20px;
+		}
+			
+			.gallery img{
+				width: 360px;
+				height: 240px;
+				margin: 10px;
+			   	display: flex;
+				flex-direction: column;
+			}
+		   
+		 .gallery p{
+			m
+ 		   	
+		 	
+		 }  
+		   
+		   
+   }
 
 
