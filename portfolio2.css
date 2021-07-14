@@ -1,0 +1,382 @@
+body, html{ 
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	background: url('portfolio2.jpg')  no-repeat center center/cover;
+	background-attachment: fixed;
+	font-family: 'Playfair Display', serif;
+}
+.navbar{
+	display:flex;
+	justify-content: center;
+	background-color: rgba(232,223,207, 0.2);
+	position: sticky;
+
+	top: -20px; /* .navbar has margin-bottom: 20px; */
+}
+
+.navbar ul{
+	display:flex;
+	list-style:none;
+	margin:20px 0px;
+}
+
+.navbar ul li{
+	font-family: inherit;
+	font-size: 24px;
+	font-weight: bold;
+	
+}
+
+.navbar ul li a{
+	text-decoration: none;
+	color: #ffffff;
+	padding: 8px 25px;
+	transition: all.5s ease;
+	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+	                 0px -5px 35px rgba(255,255,255,0.3)
+
+}
+
+.navbar ul li a:hover{
+	background-color: white;
+	color: black;
+	box-shadow: 0 0 10px #d6d5c2;
+}
+
+#home {
+	display: flex;
+	flex-direction: column;
+	
+	height: 840px;
+	justify-content: center;
+	align-items: center;
+	color:#383838;
+	
+	
+}
+
+#home::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	
+	background-attachment: fixed;
+	height: 900px;
+	width: 100%;
+	z-index:-1;
+	opacity:8;
+	
+}
+
+.center{
+	display:flex;
+	flex-direction: column;
+	border: 1px solid white;
+	align-items: center;
+	position:absolute;
+	top: 30%;
+	right:10%;
+}
+
+.headings{
+	font-family: inherit;
+	font-size: 70px;
+	text-align: center;
+	margin: 20px 0px;
+}
+
+.headings h1{
+	font-family: inherit;
+	font-size:50px;
+	text-align: center;
+	margin: 20px 0px;
+}
+
+.btn{
+	padding: 10px 55px;
+	background-color: trasparent;
+	border: 1px solid white;
+	color: #999994;
+	outline:none;
+	transition: .6s ease;
+	font-size: 30px;
+	
+
+}
+
+.btn:hover{
+	cursor: pointer;
+	background-color: white;
+	color: black;
+	box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+	font-weight: bold;
+}
+
+#about{
+	display:flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	padding: 20px;
+	margin-bottom: 50px;
+    
+
+}
+
+.about h1{
+	display:flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	color: #383838;
+	align-items: center;
+	padding: 20px;
+	font-size: 70px;
+	font-family: inherit;
+
+}
+
+
+#pic{
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	align-items: center;
+	border-radius: 50px;
+	background-color: trasparent;
+}
+#pic img{
+	width: 200px;
+	
+}
+
+#intro{
+	display: flex;
+	flex-direction: column;
+	text-align: justify;
+	padding: 10px;
+	font-family: inherit;
+}
+
+#intro p{
+	display: flex;
+	flex-direction: column;
+	text-align: justify;
+	padding: 10px;
+	font-family: ;
+}
+
+
+#portfolio{
+	display: flex;
+	flex-direction: column;
+	background-color: (0, 0, 0, 0.9);
+	color: #383838;
+	align-items: center;
+	padding: 20px;
+	font-family: inherit;
+}
+
+.gallery{
+	display: flex;
+	justify-content: space-around;
+	box-sizing: border-box;
+	
+}
+
+.gallery img{
+	width: 360px;
+	height: 240px;
+	margin: 10px;
+}
+
+#contact{
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	background-color: (0, 0, 0, 0.9);
+	color: #383838;
+	padding: 20px;
+
+}
+
+.form{
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	align-items: center;
+	margin: 20px 0px;
+	
+}
+.input{
+	padding: 12px;
+	margin: 15px;
+	width: 30%;
+	border: none;
+	outline: none;
+	background-color: white;
+}
+
+#msg{
+	width: 30%;
+	padding: 12px;
+	margin: 15px;
+	border: none;
+	outline: none;
+}
+#send{
+	padding: 10px 55px;
+	background-color: trasparent;
+	border: 1px solid white;
+	color: white;
+	outline:none;
+	transition: .6s ease;
+	font-size: 30px;
+}
+
+#send:hover{
+	cursor: pointer;
+	background-color: white;
+	color: black;
+	box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+	font-weight: bold;
+	
+}
+
+
+fa {
+	padding: 20px;
+    flex-direction: column;
+    box-sizing: border-box;
+	  width: 405px;
+	  text-align: center;
+	  text-decoration: none;
+	  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+#logo{
+       display: flex;
+       flex-direction: column;
+       box-sizing: border-box;
+       background-color: (0, 0, 0, 0.9);
+       color: #383838;
+       padding: 20px;
+   }
+   
+   .container h2{
+       font-family: inherit;
+       font-size: 50px;
+       text-align: center;
+       margin: 20px 0px;
+   
+   }
+   
+   .logo{
+       display: flex;
+       flex-direction: column;
+       box-sizing: border-box;
+       background-color: (0, 0, 0, 0.9);
+       color: #383838;
+       padding: 20px;
+	   align-items: center;
+	   justify-content: space-around;
+   	
+   }
+   
+   
+   .logo i{
+       font-size: 50px;
+       box-sizing: border-box;
+       color: #383838;
+       padding: 20px;
+	   text-align: center;
+	   flex-direction: column;
+	   align-items: center;
+	   justify-content: space-around;
+	  
+   }
+   
+   
+   
+   .gallery h2{
+	   box-sizing: border-box;
+	  margin: 0 0 10px 0;
+	   font-size: 30px;
+	   flex-direction: column;
+	
+   }
+   
+   .project{
+   	   flex-direction: column;
+	   display: flex;
+	   justify-content: space-between;
+   }
+   
+   
+   
+   .project img{
+	   margin-right: 50px;
+   	
+	
+   }
+   
+   
+   .square{
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+   }
+   
+	
+   
+   @media only screen and (max-width:800px){
+	   .navbar{
+		   align-items: flex-start;
+        flex-direction: column;
+        box-sizing: border-box;
+		width: 100%;
+           }
+		   .navbar ul{
+			   width: 100%;
+			   flex-direction: column;
+		   }
+
+		   .navbar ul li{
+			   text-align: center;
+	
+		   }
+		   
+		   .navbar ul li a{
+			   padding: .5rem 1rem;
+		   }
+		   .gallery{
+		   	display: flex;
+			flex-direction: column;
+		   	justify-content: space-around;
+		   	box-sizing: border-box; 
+			width: 100%;
+            padding: 20px;
+		}
+			
+			.gallery img{
+				width: 360px;
+				height: 240px;
+				margin: 10px;
+			   	display: flex;
+				flex-direction: column;
+			}
+		   
+		 .gallery p{
+			m
+ 		   	
+		 	
+		 }  
+		   
+		   
+   }
+
+
