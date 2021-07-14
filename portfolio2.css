@@ -44,16 +44,15 @@ body{
 	box-shadow: 0 0 10px #d6d5c2;
 }
 
-.button{
-	display: none;
-	
-}
+
+
+
 
 #home {
 	display: flex;
 	flex-direction: column;
 	
-	height: 840px;
+	height: 640px;
 	justify-content: center;
 	align-items: center;
 	color:#383838;
@@ -99,7 +98,7 @@ body{
 	margin: 20px 0px;
 }
 
-.btn{
+button{
 	padding: 10px 55px;
 	background-color: trasparent;
 	border: 1px solid white;
@@ -111,7 +110,7 @@ body{
 
 }
 
-.btn:hover{
+button:hover{
 	cursor: pointer;
 	background-color: white;
 	color: black;
@@ -129,7 +128,7 @@ body{
 
 }
 
-.about h1{
+h1{
 	display:flex;
 	flex-direction: column;
 	box-sizing: border-box;
@@ -142,7 +141,7 @@ body{
 }
 
 
-#pic{
+figure{
 	display: flex;
 	flex-direction: column;
 	box-sizing: border-box;
@@ -150,12 +149,12 @@ body{
 	border-radius: 50px;
 	background-color: trasparent;
 }
-#pic img{
-	width: 200px;
+figure img{
+	width: 230px;
 	
 }
 
-#intro{
+article{
 	display: flex;
 	flex-direction: column;
 	text-align: justify;
@@ -163,7 +162,7 @@ body{
 	font-family: inherit;
 }
 
-#intro p{
+article p{
 	display: flex;
 	flex-direction: column;
 	text-align: justify;
@@ -324,7 +323,11 @@ fa {
    
    
    .project img{
-	   margin-right: 50px;
+	 
+	   box-sizing: border-box;
+	   margin: 0px 0px 0px 0px;
+	   font-size: 30px;
+	   flex-direction: column;
    	
 	
    }
@@ -345,7 +348,7 @@ fa {
         box-sizing: border-box;
 		width: 100%;
            }
-		   .navbar ul{
+		   .navbar-link ul{
 			   width: 100%;
 			   flex-direction: column;
 			       display: table; 
@@ -354,7 +357,7 @@ fa {
 			   
 		   }
 
-		   .navbar ul li{
+		   .navbar-link ul li{
 			   text-align: center;
 			   flex-direction: column;
 			   box-sizing: border-box;
@@ -362,7 +365,7 @@ fa {
 	
 		   }
 		   
-		   .navbar ul li a{
+		   .navbar-link ul li a{
 			   padding: .5rem 1rem;
 		   }
 		   .gallery{
@@ -375,23 +378,41 @@ fa {
 		}
 		
 		
-		.button{
-			display: block;
-		}
-			
+	
 			.gallery img{
 				width: 360px;
 				height: 240px;
-				margin: 10px;
+				margin: 10px 10px 10px 10px;
 			   	display: flex;
 				flex-direction: column;
 			}
+		    .btn{
+ 			   text-align: center;
+ 			   flex-direction: column;
+ 			   box-sizing: border-box;
+ 			   align-items: center;
+		    	
+		    }
+			
+			button{
+				padding: 10px 55px;
+				background-color: trasparent;
+				border: 1px solid white;
+				color: #999994;
+				outline:none;
+				transition: .6s ease;
+				font-size: 30px;
+	
+
+			}
 		   
-		
- 		   	
-		 	
-		 }  
-		   
+			button:hover{
+				cursor: pointer;
+				background-color: white;
+				color: black;
+				box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+				font-weight: bold;
+			}
 		   
    }
 
