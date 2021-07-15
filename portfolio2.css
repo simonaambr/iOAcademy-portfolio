@@ -85,7 +85,7 @@ body {
 button{
 	padding: 10px 55px;
 	background-color: trasparent;
-	border: 1px solid white;
+	border: 1px solid #FFFFFF;
 	color: #2C3E50;
 	outline: none;
 	transition: .6s ease;
