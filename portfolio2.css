@@ -18,9 +18,7 @@ body{
 	background-color: rgba(232,223,207, 0.2);
 	position: sticky;
    border-radius: 100px;
-  
-
-	top: -20px; /* .navbar has margin-bottom: 20px; */
+   top: -20px; /* .navbar has margin-bottom: 20px; */
 }
 
 .navbar-link ul{
@@ -28,14 +26,11 @@ body{
 	list-style:none;
 	margin:20px 0px;
 	border-radius: 100px;
+	font-weight: bold;
+	font-size: 24px;
 }
 
-.navbar-link ul li{
-	font-family: inherit;
-	font-size: 24px;
-	font-weight: bold;
-	
-}
+
 
 .navbar-link ul li a{
 	text-decoration: none;
