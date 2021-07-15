@@ -1,11 +1,9 @@
 html, body {
   overflow-x: hidden;
 }
-
-
-body{ 
-	margin:0;
-	padding:0;
+body { 
+	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
 	background: url('pianta.jpg')  no-repeat center center/cover;
 	background-attachment: fixed;
@@ -17,23 +15,23 @@ body{
 	justify-content: center;
 	background-color: rgba(232,223,207, 0.2);
 	position: sticky;
-   border-radius: 100px;
-   top: -20px; /* .navbar has margin-bottom: 20px; */
+    border-radius: 100px;
+    top: -20px; /* .navbar has margin-bottom: 20px; */
+	font-weight: bold;
 }
 
 .navbar-link ul{
 	display:flex;
-	list-style:none;
-	margin:20px 0px;
-	border-radius: 100px;
-	font-weight: bold;
+	justify-content: center;
+	
 }
-
 .navbar-link ul li{
 	font-family: inherit;
 	font-size: 24px;
 	font-weight: bold;
-	
+	list-style: none;
+	display:flex;
+	justify-content: center;
 }
 
 .navbar-link ul li a{
@@ -42,7 +40,7 @@ body{
 	padding: 8px 25px;
 	transition: all.5s ease;
 	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-	                 0px -5px 35px rgba(255,255,255,0.3)
+	 0px -5px 35px rgba(255,255,255,0.3);
 
 }
 
@@ -52,31 +50,19 @@ body{
 	box-shadow: 0 0 10px #d6d5c2;
 	border-radius: 100px;
 }
-
-
-
-
-
 #home {
 	display: flex;
 	flex-direction: column;
-	
 	height: 640px;
 	justify-content: center;
 	align-items: center;
-	
-	
-	
 }
-
-
-
 .center{
-	display:flex;
+	display: flex;
 	flex-direction: column;
 	border: 1px solid white;
 	align-items: center;
-	position:absolute;
+	position: absolute;
 	top: 30%;
 	right:10%;
 }
@@ -86,6 +72,7 @@ body{
 	font-size: 70px;
 	text-align: center;
 	margin: 20px 0px;
+	
 }
 
 .headings h1{
@@ -100,12 +87,10 @@ button{
 	background-color: trasparent;
 	border: 1px solid white;
 	color: #2C3E50;
-	outline:none;
+	outline: none;
 	transition: .6s ease;
 	font-size: 30px;
 	border-radius: 100px;
-	
-
 }
 
 button:hover{
@@ -124,8 +109,6 @@ button:hover{
 	box-sizing: border-box;
 	padding: 20px;
 	margin-bottom: 50px;
-    
-
 }
 
 h1{
@@ -137,10 +120,7 @@ h1{
 	padding: 20px;
 	font-size: 70px;
 	font-family: inherit;
-
 }
-
-
 figure{
 	display: flex;
 	flex-direction: column;
@@ -151,7 +131,8 @@ figure{
 }
 figure img{
 	width: 230px;
-	
+	background-color: white;
+	border-radius: 100px;
 }
 
 article{
@@ -160,6 +141,8 @@ article{
 	text-align: justify;
 	padding: 10px;
 	font-family: inherit;
+	background-color: #eef2ee;
+	border-radius: 70px;
 }
 
 article p{
@@ -169,7 +152,7 @@ article p{
 	padding: 10px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
-	color: #d0b38f;
+	color: #2e432f;
 }
 
 
@@ -181,16 +164,23 @@ article p{
 	align-items: center;
 	padding: 20px;
 	font-family: inherit;
-	
 }
 
 .gallery{
 	display: flex;
 	justify-content: space-around;
 	box-sizing: border-box;
-	
+	border-radius: 70px;
+	background-color: #eef2ee;
+	padding: 30px;
 }
-
+.gallery h2{
+	   box-sizing: border-box;
+	  margin: 0 0 10px 0;
+	   font-size: 30px;
+	   flex-direction: column;
+	   color: #2e432f;
+}
 .gallery img{
 	width: 360px;
 	height: 240px;
@@ -237,7 +227,7 @@ article p{
 	padding: 10px 55px;
 	background-color: trasparent;
 	border: 1px solid white;
-	color: white;
+	color: #2e432f;
 	outline:none;
 	transition: .6s ease;
 	font-size: 30px;
@@ -274,20 +264,17 @@ fa {
        flex-direction: column;
        box-sizing: border-box;
        background-color: (0, 0, 0, 0.9);
-       color: #d0b38f;
-       
-   }
+       color: #F1E9D6;
+}
    
-   .container h2{
+.container h2{
        font-family: inherit;
        font-size: 50px;
        text-align: center;
        margin: 20px 0px;
-	   
+}
    
-   }
-   
-   .logo{
+.logo{
        display: flex;
        flex-direction: row;
        box-sizing: border-box;
@@ -296,11 +283,10 @@ fa {
        padding: 20px;
 	   align-items: center;
 	   justify-content: space-around;
-   	
-   }
+ }
    
    
-   .logo i{
+.logo i{
        font-size: 50px;
        box-sizing: border-box;
        color: #d0b38f;
@@ -309,146 +295,106 @@ fa {
 	   flex-direction: column;
 	   align-items: center;
 	   justify-content: space-around;
-	  
-   }
+}
    
-   img.logo {
+img.logo {
 	   width: 100px;
    	   height: 100px;
-   }
-   
-   
-   .gallery h2{
-	   box-sizing: border-box;
-	  margin: 0 0 10px 0;
-	   font-size: 30px;
-	   flex-direction: column;
-	
-   }
-   
-   .project{
+}
+  
+.project{
    	   flex-direction: column;
 	   display: flex;
 	   justify-content: space-between;
-   }
-   
-   
-   
-   .project img{
+}
+.project img{
 	 
 	   box-sizing: border-box;
 	   margin: 0px 0px 0px 0px;
 	   font-size: 30px;
 	   flex-direction: column;
-   	
-	
-   }
-   
-   
-   .square{
+}
+.square{
        display: flex;
        flex-direction: column;
        justify-content: space-between;
-   }
+}
    
 	
    
-   @media only screen and (max-width:800px){
-	   .navbar{
-	
-        flex-direction: column;
-        box-sizing: border-box;
-		width: 100%;
-		border-radius: 100px;
-           }
-		   .navbar-link ul{
-			   flex-direction: column;
-			       display: table; 
-			       margin: 0 auto;
-			       text-align: left;
-			   
-		   }
-
-		   .navbar-link ul li{
-			   text-align: center;
-			   flex-direction: column;
-			   box-sizing: border-box;
-			   align-items: center;
-	
-		   }
-		   
-		   .navbar-link ul li a{
-			   padding: .5rem 1rem;
-		   }
-		   .gallery{
-		   	display: flex;
-			flex-direction: column;
-		   	justify-content: space-around;
-		   	box-sizing: border-box; 
-			width: 100%;
-            padding: 20px;
-		}
-		
-		
-	
-			.gallery img{
-				width: 100%;
-				height: auto;
-				margin: 10px 10px 10px 10px;
-			   	display: flex;
-				flex-direction: column;
-				
-			}
+@media only screen and (max-width:800px){
+.navbar{
+	flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 100px;
+ }
+.navbar-link ul{
+	 flex-direction: column;
+	 display: table; 
+	 margin: 0 auto;
+	 text-align: left;
+ }
+.navbar-link ul li{
+	 text-align: center;
+	 flex-direction: column;
+	 box-sizing: border-box;
+	 align-items: center;
+ }
+ .navbar-link ul li a{
+	 padding: .5rem 1rem;
+ }
+ .gallery{
+     display: flex;
+	 flex-direction: column;
+	 justify-content: space-around;
+	 box-sizing: border-box; 
+     width: 100%;
+     padding: 20px;
+ }
+ .gallery img{
+     width: 100%;
+	 height: auto;
+	 margin: 10px 10px 10px 10px;
+	 display: flex;
+     flex-direction: column;
+ }
 			
-		
-		    .btn{
- 			   text-align: center;
- 			   flex-direction: column;
- 			   box-sizing: border-box;
- 			   align-items: center;
-		    	
-		    }
-			
-			button{
-				padding: 10px 55px;
-				background-color: trasparent;
-				border: 1px solid white;
-				color: #999994;
-				outline:none;
-				transition: .6s ease;
-				font-size: 30px;
-				border-radius: 100px;
-	
+.btn{
+  text-align: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+ }
+button{
+  padding: 10px 55px;
+  background-color: trasparent;
+  border: 1px solid white;
+  color: #999994;
+  outline:none;
+  transition: .6s ease;
+  font-size: 30px;
+  border-radius: 100px;
+ }
 
-			}
-		   
-			button:hover{
-				cursor: pointer;
-				background-color: white;
-				color: black;
-				box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
-				font-weight: bold;
-			}
-			
-			.input{
-				padding: 12px;
-				margin: 15px;
-				width: 80%;
-				border: none;
-				outline: none;
-				background-color: white;
-				border-radius: 20px;
-			}
+.input{
+  padding: 12px;
+  margin: 15px;
+  width: 80%;
+  border: none;
+  outline: none;
+  background-color: white;
+  border-radius: 20px;
+ }
 
-			#msg{
-				width: 80%;
-				padding: 12px;
-				margin: 15px;
-				border: none;
-				outline: none;
-				border-radius: 20px;
-			}
-		
-   }
+#msg{
+  width: 80%;
+  padding: 12px;
+  margin: 15px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+ }
+}
 
 
