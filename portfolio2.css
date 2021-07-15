@@ -1,34 +1,43 @@
-body, html{ 
+html, body {
+  overflow-x: hidden;
+}
+
+
+body{ 
 	margin:0;
 	padding:0;
 	box-sizing: border-box;
-	background: url('portfolio2.jpg')  no-repeat center center/cover;
+	background: url('pianta.jpg')  no-repeat center center/cover;
 	background-attachment: fixed;
-	font-family: 'Playfair Display', serif;
+	font-family: 'Abril Fatface', cursive;
+	position: relative;
 }
 .navbar{
 	display:flex;
 	justify-content: center;
 	background-color: rgba(232,223,207, 0.2);
 	position: sticky;
+   border-radius: 100px;
+  
 
 	top: -20px; /* .navbar has margin-bottom: 20px; */
 }
 
-.navbar ul{
+.navbar-link ul{
 	display:flex;
 	list-style:none;
 	margin:20px 0px;
+	border-radius: 100px;
 }
 
-.navbar ul li{
+.navbar-link ul li{
 	font-family: inherit;
 	font-size: 24px;
 	font-weight: bold;
 	
 }
 
-.navbar ul li a{
+.navbar-link ul li a{
 	text-decoration: none;
 	color: #ffffff;
 	padding: 8px 25px;
@@ -39,36 +48,29 @@ body, html{
 }
 
 .navbar ul li a:hover{
-	background-color: white;
-	color: black;
+	background-color: #c19a6b;
+	color: #534b4f;
 	box-shadow: 0 0 10px #d6d5c2;
+	border-radius: 100px;
 }
+
+
+
+
 
 #home {
 	display: flex;
 	flex-direction: column;
 	
-	height: 840px;
+	height: 640px;
 	justify-content: center;
 	align-items: center;
-	color:#383838;
+	
 	
 	
 }
 
-#home::before{
-	content: "";
-	position: absolute;
-	top: 0;
-	right: 0;
-	
-	background-attachment: fixed;
-	height: 900px;
-	width: 100%;
-	z-index:-1;
-	opacity:8;
-	
-}
+
 
 .center{
 	display:flex;
@@ -94,24 +96,27 @@ body, html{
 	margin: 20px 0px;
 }
 
-.btn{
+button{
 	padding: 10px 55px;
 	background-color: trasparent;
 	border: 1px solid white;
-	color: #999994;
+	color: #2C3E50;
 	outline:none;
 	transition: .6s ease;
 	font-size: 30px;
+	border-radius: 100px;
 	
 
 }
 
-.btn:hover{
+button:hover{
 	cursor: pointer;
-	background-color: white;
-	color: black;
+	background-color: #c19a6b;
+	color: #534b4f;
 	box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
 	font-weight: bold;
+	border-radius: 100px;
+	font-size: 25px;
 }
 
 #about{
@@ -124,11 +129,11 @@ body, html{
 
 }
 
-.about h1{
+h1{
 	display:flex;
 	flex-direction: column;
 	box-sizing: border-box;
-	color: #383838;
+	color: #F1E9D6;
 	align-items: center;
 	padding: 20px;
 	font-size: 70px;
@@ -137,7 +142,7 @@ body, html{
 }
 
 
-#pic{
+figure{
 	display: flex;
 	flex-direction: column;
 	box-sizing: border-box;
@@ -145,12 +150,12 @@ body, html{
 	border-radius: 50px;
 	background-color: trasparent;
 }
-#pic img{
-	width: 200px;
+figure img{
+	width: 230px;
 	
 }
 
-#intro{
+article{
 	display: flex;
 	flex-direction: column;
 	text-align: justify;
@@ -158,12 +163,14 @@ body, html{
 	font-family: inherit;
 }
 
-#intro p{
+article p{
 	display: flex;
 	flex-direction: column;
 	text-align: justify;
 	padding: 10px;
-	font-family: ;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	color: #d0b38f;
 }
 
 
@@ -171,10 +178,11 @@ body, html{
 	display: flex;
 	flex-direction: column;
 	background-color: (0, 0, 0, 0.9);
-	color: #383838;
+	color: #d0b38f;
 	align-items: center;
 	padding: 20px;
 	font-family: inherit;
+	
 }
 
 .gallery{
@@ -215,6 +223,7 @@ body, html{
 	border: none;
 	outline: none;
 	background-color: white;
+	border-radius: 20px;
 }
 
 #msg{
@@ -223,6 +232,7 @@ body, html{
 	margin: 15px;
 	border: none;
 	outline: none;
+	border-radius: 20px;
 }
 #send{
 	padding: 10px 55px;
@@ -232,6 +242,7 @@ body, html{
 	outline:none;
 	transition: .6s ease;
 	font-size: 30px;
+	border-radius: 100px;
 }
 
 #send:hover{
@@ -240,6 +251,7 @@ body, html{
 	color: black;
 	box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
 	font-weight: bold;
+	border-radius: 100px;
 	
 }
 
@@ -263,8 +275,8 @@ fa {
        flex-direction: column;
        box-sizing: border-box;
        background-color: (0, 0, 0, 0.9);
-       color: #383838;
-       padding: 20px;
+       color: #d0b38f;
+       
    }
    
    .container h2{
@@ -272,15 +284,16 @@ fa {
        font-size: 50px;
        text-align: center;
        margin: 20px 0px;
+	   
    
    }
    
    .logo{
        display: flex;
-       flex-direction: column;
+       flex-direction: row;
        box-sizing: border-box;
        background-color: (0, 0, 0, 0.9);
-       color: #383838;
+       color: #d0b38f;
        padding: 20px;
 	   align-items: center;
 	   justify-content: space-around;
@@ -291,7 +304,7 @@ fa {
    .logo i{
        font-size: 50px;
        box-sizing: border-box;
-       color: #383838;
+       color: #d0b38f;
        padding: 20px;
 	   text-align: center;
 	   flex-direction: column;
@@ -300,6 +313,10 @@ fa {
 	  
    }
    
+   img.logo {
+	   width: 100px;
+   	   height: 100px;
+   }
    
    
    .gallery h2{
@@ -319,7 +336,11 @@ fa {
    
    
    .project img{
-	   margin-right: 50px;
+	 
+	   box-sizing: border-box;
+	   margin: 0px 0px 0px 0px;
+	   font-size: 30px;
+	   flex-direction: column;
    	
 	
    }
@@ -335,22 +356,29 @@ fa {
    
    @media only screen and (max-width:800px){
 	   .navbar{
-		   align-items: flex-start;
+	
         flex-direction: column;
         box-sizing: border-box;
 		width: 100%;
+		border-radius: 100px;
            }
-		   .navbar ul{
-			   width: 100%;
+		   .navbar-link ul{
 			   flex-direction: column;
+			       display: table; 
+			       margin: 0 auto;
+			       text-align: left;
+			   
 		   }
 
-		   .navbar ul li{
+		   .navbar-link ul li{
 			   text-align: center;
+			   flex-direction: column;
+			   box-sizing: border-box;
+			   align-items: center;
 	
 		   }
 		   
-		   .navbar ul li a{
+		   .navbar-link ul li a{
 			   padding: .5rem 1rem;
 		   }
 		   .gallery{
@@ -361,22 +389,67 @@ fa {
 			width: 100%;
             padding: 20px;
 		}
-			
+		
+		
+	
 			.gallery img{
-				width: 360px;
-				height: 240px;
-				margin: 10px;
+				width: 100%;
+				height: auto;
+				margin: 10px 10px 10px 10px;
 			   	display: flex;
 				flex-direction: column;
+				
+			}
+			
+		
+		    .btn{
+ 			   text-align: center;
+ 			   flex-direction: column;
+ 			   box-sizing: border-box;
+ 			   align-items: center;
+		    	
+		    }
+			
+			button{
+				padding: 10px 55px;
+				background-color: trasparent;
+				border: 1px solid white;
+				color: #999994;
+				outline:none;
+				transition: .6s ease;
+				font-size: 30px;
+				border-radius: 100px;
+	
+
 			}
 		   
-		 .gallery p{
-			m
- 		   	
-		 	
-		 }  
-		   
-		   
+			button:hover{
+				cursor: pointer;
+				background-color: white;
+				color: black;
+				box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+				font-weight: bold;
+			}
+			
+			.input{
+				padding: 12px;
+				margin: 15px;
+				width: 80%;
+				border: none;
+				outline: none;
+				background-color: white;
+				border-radius: 20px;
+			}
+
+			#msg{
+				width: 80%;
+				padding: 12px;
+				margin: 15px;
+				border: none;
+				outline: none;
+				border-radius: 20px;
+			}
+		
    }
 
 
