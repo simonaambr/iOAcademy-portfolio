@@ -1,34 +1,44 @@
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative
+}
+
 body{ 
 	margin:0;
 	padding:0;
 	box-sizing: border-box;
-	background: url('portfolio2.jpg')  no-repeat center center/cover;
+	background: url('pianta.jpg')  no-repeat center center/cover;
 	background-attachment: fixed;
-	font-family: 'Playfair Display', serif;
+	font-family: 'Abril Fatface', cursive;
 }
 .navbar{
 	display:flex;
 	justify-content: center;
 	background-color: rgba(232,223,207, 0.2);
 	position: sticky;
+   border-radius: 100px;
+  
 
 	top: -20px; /* .navbar has margin-bottom: 20px; */
 }
 
-.navbar ul{
+.navbar-link ul{
 	display:flex;
 	list-style:none;
 	margin:20px 0px;
+	border-radius: 100px;
 }
 
-.navbar ul li{
+.navbar-link ul li{
 	font-family: inherit;
 	font-size: 24px;
 	font-weight: bold;
 	
 }
 
-.navbar ul li a{
+.navbar-link ul li a{
 	text-decoration: none;
 	color: #ffffff;
 	padding: 8px 25px;
@@ -39,9 +49,10 @@ body{
 }
 
 .navbar ul li a:hover{
-	background-color: white;
-	color: black;
+	background-color: #c19a6b;
+	color: #534b4f;
 	box-shadow: 0 0 10px #d6d5c2;
+	border-radius: 100px;
 }
 
 
@@ -55,24 +66,12 @@ body{
 	height: 640px;
 	justify-content: center;
 	align-items: center;
-	color:#383838;
+	
 	
 	
 }
 
-#home::before{
-	content: "";
-	position: absolute;
-	top: 0;
-	right: 0;
-	
-	background-attachment: fixed;
-	height: 900px;
-	width: 100%;
-	z-index:-1;
-	opacity:8;
-	
-}
+
 
 .center{
 	display:flex;
@@ -102,20 +101,23 @@ button{
 	padding: 10px 55px;
 	background-color: trasparent;
 	border: 1px solid white;
-	color: #999994;
+	color: #2C3E50;
 	outline:none;
 	transition: .6s ease;
 	font-size: 30px;
+	border-radius: 100px;
 	
 
 }
 
 button:hover{
 	cursor: pointer;
-	background-color: white;
-	color: black;
+	background-color: #c19a6b;
+	color: #534b4f;
 	box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
 	font-weight: bold;
+	border-radius: 100px;
+	font-size: 25px;
 }
 
 #about{
@@ -132,7 +134,7 @@ h1{
 	display:flex;
 	flex-direction: column;
 	box-sizing: border-box;
-	color: #383838;
+	color: #F1E9D6;
 	align-items: center;
 	padding: 20px;
 	font-size: 70px;
@@ -167,7 +169,9 @@ article p{
 	flex-direction: column;
 	text-align: justify;
 	padding: 10px;
-	font-family: ;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	color: #d0b38f;
 }
 
 
@@ -175,10 +179,11 @@ article p{
 	display: flex;
 	flex-direction: column;
 	background-color: (0, 0, 0, 0.9);
-	color: #383838;
+	color: #d0b38f;
 	align-items: center;
 	padding: 20px;
 	font-family: inherit;
+	
 }
 
 .gallery{
@@ -219,6 +224,7 @@ article p{
 	border: none;
 	outline: none;
 	background-color: white;
+	border-radius: 20px;
 }
 
 #msg{
@@ -227,6 +233,7 @@ article p{
 	margin: 15px;
 	border: none;
 	outline: none;
+	border-radius: 20px;
 }
 #send{
 	padding: 10px 55px;
@@ -236,6 +243,7 @@ article p{
 	outline:none;
 	transition: .6s ease;
 	font-size: 30px;
+	border-radius: 100px;
 }
 
 #send:hover{
@@ -244,6 +252,7 @@ article p{
 	color: black;
 	box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
 	font-weight: bold;
+	border-radius: 100px;
 	
 }
 
@@ -267,8 +276,8 @@ fa {
        flex-direction: column;
        box-sizing: border-box;
        background-color: (0, 0, 0, 0.9);
-       color: #383838;
-       padding: 20px;
+       color: #d0b38f;
+       
    }
    
    .container h2{
@@ -276,6 +285,7 @@ fa {
        font-size: 50px;
        text-align: center;
        margin: 20px 0px;
+	   
    
    }
    
@@ -284,7 +294,7 @@ fa {
        flex-direction: row;
        box-sizing: border-box;
        background-color: (0, 0, 0, 0.9);
-       color: #383838;
+       color: #d0b38f;
        padding: 20px;
 	   align-items: center;
 	   justify-content: space-around;
@@ -295,7 +305,7 @@ fa {
    .logo i{
        font-size: 50px;
        box-sizing: border-box;
-       color: #383838;
+       color: #d0b38f;
        padding: 20px;
 	   text-align: center;
 	   flex-direction: column;
@@ -343,13 +353,13 @@ fa {
    
    @media only screen and (max-width:800px){
 	   .navbar{
-		   align-items: flex-start;
+	
         flex-direction: column;
         box-sizing: border-box;
 		width: 100%;
+		border-radius: 100px;
            }
 		   .navbar-link ul{
-			   width: 100%;
 			   flex-direction: column;
 			       display: table; 
 			       margin: 0 auto;
@@ -380,8 +390,8 @@ fa {
 		
 	
 			.gallery img{
-				width: 360px;
-				height: 240px;
+				width: 100%;
+				height: auto;
 				margin: 10px 10px 10px 10px;
 			   	display: flex;
 				flex-direction: column;
@@ -402,6 +412,7 @@ fa {
 				outline:none;
 				transition: .6s ease;
 				font-size: 30px;
+				border-radius: 100px;
 	
 
 			}
@@ -413,7 +424,26 @@ fa {
 				box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
 				font-weight: bold;
 			}
-		   
+			
+			.input{
+				padding: 12px;
+				margin: 15px;
+				width: 80%;
+				border: none;
+				outline: none;
+				background-color: white;
+				border-radius: 20px;
+			}
+
+			#msg{
+				width: 80%;
+				padding: 12px;
+				margin: 15px;
+				border: none;
+				outline: none;
+				border-radius: 20px;
+			}
+		
    }
 
 
