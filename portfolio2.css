@@ -15,16 +15,16 @@ body {
 	justify-content: center;
 	background-color: rgba(232,223,207, 0.2);
 	position: sticky;
-    border-radius: 100px;
-    top: -20px; /* .navbar has margin-bottom: 20px; */
+  border-radius: 100px;
+  top: -20px; /* .navbar has margin-bottom: 20px; */
 	font-weight: bold;
 }
 
 .navbar-link ul{
 	display:flex;
 	justify-content: center;
-	
 }
+
 .navbar-link ul li{
 	font-family: inherit;
 	font-size: 24px;
@@ -34,6 +34,8 @@ body {
 	justify-content: center;
 }
 
+
+
 .navbar-link ul li a{
 	text-decoration: none;
 	color: #ffffff;
@@ -41,7 +43,6 @@ body {
 	transition: all.5s ease;
 	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
 	 0px -5px 35px rgba(255,255,255,0.3);
-
 }
 
 .navbar ul li a:hover{
