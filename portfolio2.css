@@ -1,9 +1,7 @@
 html, body {
   overflow-x: hidden;
 }
-body {
-  position: relative
-}
+
 
 body{ 
 	margin:0;
@@ -12,6 +10,7 @@ body{
 	background: url('pianta.jpg')  no-repeat center center/cover;
 	background-attachment: fixed;
 	font-family: 'Abril Fatface', cursive;
+	position: relative;
 }
 .navbar{
 	display:flex;
@@ -314,6 +313,10 @@ fa {
 	  
    }
    
+   img.logo {
+	   width: 100px;
+   	   height: 100px;
+   }
    
    
    .gallery h2{
